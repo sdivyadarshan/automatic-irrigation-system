@@ -1,0 +1,14 @@
+Component,Module Pin,Arduino Nano Pin,Notes
+Soil moisture module,VCC,5V,Use regulated 5V
+Soil moisture module,GND,GND,Common ground
+Soil moisture module,AO,A0,Analog measurement
+Soil moisture module,DO,Not connected,Unused in this analog implementation
+Relay module,VCC,5V,Check relay module current requirements
+Relay module,GND,GND,Control-side ground
+Relay module,IN,D9,Set relay active level in sketch
+Buzzer,Positive,D6,Use a suitable driver if buzzer current exceeds GPIO capability
+Buzzer,Negative,GND,Common ground
+Pump,Positive,Relay NO,Switched external pump supply positive
+Pump,Negative,External supply GND,Do not connect directly to Arduino GPIO
+External pump supply,Positive,Relay COM,Use a supply rated for pump startup current
+External pump supply,GND,Common ground,Connect to Arduino/relay control GND
